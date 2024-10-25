@@ -20,5 +20,6 @@ from apirkla import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('apirkla/', views.obtener_temp)
+    path('apirkla/valpo', views.temp_valpo),
+    path('apirkla/vina', views.temp_viña),
 ]
