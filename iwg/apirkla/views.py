@@ -26,7 +26,7 @@ def temp_valpo(request):
         zonalocal= pytz.timezone('America/Santiago')
         utc_formato=zona.localize(utc_formato)
         hora=utc_formato.astimezone(zonalocal)
-        horaformato=hora.strftime("%H:%M:%S %d del %m de %Y")
+        horaformato=hora.strftime("registro tomado a las %H:%M:%S %d del %m de %Y")
         return JsonResponse({'temperatura': temp, 
                              'hora': horaformato
                              })
@@ -54,7 +54,7 @@ def temp_viña(request):
         zonalocal= pytz.timezone('America/Santiago')
         utc_formato=zona.localize(utc_formato)
         hora=utc_formato.astimezone(zonalocal)
-        horaformato=hora.strftime("%H:%M:%S %d del %m de %Y")
+        horaformato=hora.strftime("registro tomado a las %H:%M:%S %d del %m de %Y")
         return JsonResponse({'temperatura': temp, 
                              'hora': horaformato
                              })
