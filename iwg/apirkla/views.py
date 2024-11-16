@@ -105,7 +105,7 @@ def temp_viña(request):
         
         fecha_formato = hora.strftime("%d-%b").lstrip("0").capitalize()
         
-        archivocsv = os.path.join(os.path.dirname(__file__), 'TemperaturasMediasyExtremasen30Años_2024-11-15_22_52.csv')
+        archivocsv = os.path.join(os.path.dirname(__file__), 'TemperaturasReformateadas.csv')
         df = pd.read_csv(archivocsv)
         
         df['Dia-Mes'] = df['Dia-Mes'].str.lower().str.strip()
