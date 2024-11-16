@@ -1,0 +1,62 @@
+/* Banner superior */
+.banner-volver {
+    position: fixed; /* Siempre visible en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda la anchura de la pantalla */
+    background-color: #68c3a3; /* Color del fondo */
+    color: #333; /* Color del texto */
+    text-align: center;
+    padding: 15px 0; /* Espaciado vertical */
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer; /* Cursor en forma de mano */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el ratón */
+}
+
+.banner-volver:hover {
+    background-color: #57b693; /* Color más oscuro al pasar el ratón */
+}
+
+/* Resto del contenido */
+body {
+    background-color: #333; /* Fondo oscuro */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column; /* Coloca el contenido en columna */
+}
+
+.contenedor {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    text-align: center;
+    margin-top: 200px; /* Separa el contenido del banner */
+    margin-bottom: auto; /* Ajusta el espaciado automáticamente */
+}
+
+h1 {
+    color: #68c3a3;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+p strong {
+    color: #ffffff;
+}

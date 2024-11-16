@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	{% load static %}
+	<meta charset="UTF-8">
+	<title>Temperatura Valparaíso</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
+
+</head>
+<body>
+	<div id="st-preloader">
+		<div id="pre-status">
+			<div class="preload-placeholder"></div>
+		</div>
+	</div>
+
+	<header class="st-header st-fullHeight">
+		<div class="header-overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center st-header-content">
+					<div class="logo"><a href=""><img src="{% static 'images/logo.png'%}" alt=""></a></div>
+					<div class="st-header-title">
+						<h2>Temperatura <span>en tiempo real</span></h2>
+						<p>Consulta los datos de temperatura actual en tiempo real, con uso de la api de meteochile. <br /> Genera consciencia sobre el cambio climático y el aumento de las temperaturas.</p>
+						<div class="button-container">
+							<a href="http://127.0.0.1:8000/apirkla/valpo" class="custom-button">Valparaíso</a>
+							<a href="http://127.0.0.1:8000/apirkla/vina" class="custom-button">Viña del mar</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /HEADER -->
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<!-- SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-push-6 social-icons">
+					<a href="https://www.instagram.com/pokejavix14/"><i class="fa fa-instagram"></i></a>
+				</div>
+				<!-- /SOCIAL ICONS -->
+				<div class="col-sm-6 col-sm-pull-6 copyright">
+					<p>&copy; 2024 <a href="https://www.youtube.com/c/pokejavix14">Pokejavix14</a>.   Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /FOOTER -->
+	
+	<!-- JS -->
+	<script type="text/javascript" src="{% static 'js/jquery.min.js'%}"></script><!-- jQuery -->
+	<script type="text/javascript" src="{% static 'js/bootstrap.min.js'%}"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="{% static 'js/jquery.parallax.js'%}"></script><!-- Parallax -->
+	<script type="text/javascript" src="{% static 'js/smoothscroll.js'%}"></script><!-- Smooth Scroll -->
+	<script type="text/javascript" src="{%static 'js/scripts.js'%}"></script><!-- Scripts -->
+
+</body>
+</html>

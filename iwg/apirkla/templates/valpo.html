@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Temperatura en Valparaíso</title>
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    <div class="banner-volver" onclick="window.location.href='/index'">
+        <p>Volver a la página principal</p>
+    </div>
+    <div class="contenedor">
+        <h1>Temperatura Actual en Valparaíso</h1>
+        <p><strong>Temperatura:</strong> {{ temperatura }} °C</p>
+        <p><strong>Hora:</strong> {{ hora }}</p>
+        <p><strong>La media de los últimos 30 años este día fue:</strong> {{ media }} °C</p>
+        <p><strong>{{ mensajito }}</strong></p>
+    </div>
+</body>
+</html>
